@@ -2,6 +2,40 @@
 @tailwind components;
 @tailwind utilities;
 
+@layer components {
+  .card {
+    background-color: rgba(18, 18, 18, 0.85);
+    border-radius: theme('borderRadius.lg');
+    box-shadow: theme('boxShadow.xl');
+    position: relative;
+    height: 100%;
+  }
+
+  .card .card-header {
+      display: flex;
+      top: 0;
+      width: 100%;
+      padding: 0.75rem 1.625rem;
+      border-radius: 0.5rem 0.5rem 0rem 0rem;
+      background: #1F1F1F;
+      align-items: center;
+      gap: 0.625rem;
+  }
+
+  .card .card-body {
+    border-radius: 0rem 0rem 0.4375rem 0.4375rem;
+    flex-shrink: 0;
+    padding: theme('spacing.6');
+  }
+
+  .card .card-footer {
+    border-radius: 0rem 0rem 0.5rem 0.5rem;
+    background: rgba(18, 18, 18, 0.85);
+    flex-shrink: 0;
+    padding: theme('spacing.6');
+  }
+}
+
 :root {
   --foreground-rgb: 0, 0, 0;
   --background-start-rgb: 214, 219, 220;
@@ -16,7 +50,37 @@
   }
 }
 
+/* scroll bar */  
+::-webkit-scrollbar {
+  width: 8px;
+  height: 8px;
+  border-radius: 100%;
+}
+
+::-webkit-scrollbar-track {
+  background: black;
+}
+
+::-webkit-scrollbar-thumb {
+  background: #242424;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: #494949;
+}
+
+::-webkit-scrollbar-thumb:active {
+  background: #646464;
+}
+
+::-webkit-scrollbar-corner {
+  background: rgb(var(--background-end-rgb));
+}
+
+/* scroll bar */
+
 body {
+  scroll-behavior: smooth !important;
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -25,3 +89,57 @@ body {
     )
     rgb(var(--background-start-rgb));
 }
+
+
+.linearGradientBackground {
+  background: linear-gradient(
+    90deg,
+    rgb(177, 108, 234) 14.06%,
+    rgb(255, 94, 105) 44.79%,
+    rgb(255, 138, 86) 71.88%,
+    rgb(255, 168, 75) 100%
+  );
+}
+.linearGradientBackgroundTransparent {
+  background: linear-gradient(
+    90deg,
+    rgba(177, 108, 234, 0) 1.06%,
+    rgb(177, 108, 234),
+    rgb(255, 94, 105),
+    rgb(255, 138, 86),
+    rgb(255, 168, 75),
+    rgba(177, 108, 234, 0) 100%
+  );
+}
+
+.linearWhiteBackgroundTransparent {
+  background: linear-gradient(
+    90deg,
+    rgba(177, 108, 234, 0) 1.06%,
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgb(255, 255, 255),
+    rgba(177, 108, 234, 0) 100%
+  );
+}
+
+.linearGradientText {
+  -webkit-background-clip: text !important;
+  -webkit-text-fill-color: transparent;
+  background: linear-gradient(
+    90deg,
+    rgb(177, 108, 234) 14.06%,
+    rgb(255, 94, 105) 44.79%,
+    rgb(255, 138, 86) 71.88%,
+    rgb(255, 168, 75) 100%
+  );
+  background-clip: text;
+  color: transparent;
+}
+
+.linearYellowRed{
+  background: linear-gradient(50deg, #CBDC08 0%, #FF4747 100%);
+  -webkit-clip-path: polygon(0 68%, 100% 5%, 100% 100%, 0% 100%);
+  clip-path: polygon(0 68%, 100% 5%, 100% 100%, 0% 100%);
+}
+
