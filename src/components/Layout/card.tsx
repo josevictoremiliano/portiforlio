@@ -33,11 +33,18 @@ export default function Card(props: CardProps) {
             <div className="card-footer flex justify-center flex-col items-center gap-4">
                 <div className="flex flex-wrap gap-2">
                     {props.tags?.map((tag, index) => (
-                        <span key={index} className="bg-zinc-600 hover:bg-zinc-900 transition-all text-white px-3 py-1 rounded-full">{tag}</span>
+                        <span key={index} className="bg-zinc-600 hover:bg-zinc-900 transition-all text-white px-3 py-1 rounded-full cursor-default">{tag}</span>
                     ))}
                 </div>
 
-                <a href={props.link} className={`bg-acerola hover:bg-cenoura transition-colors shadow-md p-3 rounded-full ${props.linkDisponivel}`}>Ver projeto</a>
+                {
+                    props.linkDisponivel === "hidden" ? (
+                        <p className="text-zinc-900 bg-slate-100 p-2 rounded-md">Em breve</p>
+                    ) : (
+                        <></>
+                    )
+                }
+                <a href={props.link} className={`bg-acerola hover:bg-cenoura transition-colors shadow-md p-2 rounded-md ${props.linkDisponivel}`} target="_blank">Ver projeto</a>
             </div>
         </div>
     )
