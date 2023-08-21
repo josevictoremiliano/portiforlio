@@ -1,7 +1,3 @@
-//Olá Eu sou Jose Victor
-//Web design, residente no Rio Grande do Norte- Brasil, atualmente estudando Informatica para Internet no IFRN/Brasil
-//btns me conheça e curriculo
-
 import Link from "next/link";
 import Linguagens from "./linguagens";
 import Contato from "./contato";
