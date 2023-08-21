@@ -44,8 +44,8 @@ const projects = [
         tags: ["Figma", "HTML", "PHP", "Laravel"],
         image: "/projetos/neep.png",
         description: "Site do PEPP - IFRN/SPP, desenvolvido para o projeto de extensão do IFRN Campus São Paulo do Potengi, para uso de um portfolio de cursos e do campus.",
-        linldisponivel: "hidden",
-    },
+        linkDisponivel: "hidden",
+    }
 ]
 
     
@@ -55,13 +55,14 @@ export default function Projetos() {
         <div className="my-12">
             <SectionName name="Projetos"  href="Projects" id="Projects"/>
 
-            <div className="flex flex-wrap justify-center  gap-2 mt-6 ">
+            <div className="flex flex-wrap justify-center  gap-2 mt-6 mx-2">
                 {projects.map((project, index) => (
                     <Card 
                         key={index}
                         title={project.title}
                         image={project.image}
                         description={project.description}
+                        descriptionModal={project.description}
                         tags={project.tags}
                         link={project.link}
                         linkDisponivel={project.linkDisponivel}

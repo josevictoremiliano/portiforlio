@@ -24,35 +24,35 @@ export default function Navbar() {
     return (<>
 
         {isOpen === true ? (
-				<div className='sticky top-0 z-20'>
+				<div className='sticky top-0 z-50'>
 					<div
-						className='fixed h-full inset-0   bg-slate-600/50 backdrop-blur-sm flex w-screen '
+						className='fixed h-full inset-0   bg-zinc-600/40 backdrop-blur-sm flex w-screen '
 						onClick={toggleisOpen}>
 						<div className='w-full' />
 
-						<div className=' px-1 relative  h-full w-full bg-indigo-600 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-10'>
+						<div className=' px-1 relative  h-full w-full bg-zinc-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-80'>
 							
-							<ul className='flex flex-col sticky  whitespace-nowrap p-2 '>
+							<ul className='flex flex-col p-2 '>
                                 <li>
                                     <button className="items-end  justify-end flex w-full" onClick={() => toggleisOpen()}>
                                         <X size={36} color="#fff" />
                                     </button>
                                 </li>
-								<li className=' py-5 pl-3 hover:bg-zinc-900 rounded-md '>
-									Inicio
-								</li>
-								<li className='py-5 pl-3 hover:bg-zinc-900 rounded-md '>
-									Sobre
-								</li>
-								<li className='py-5 pl-3 hover:bg-zinc-900 rounded-md '>
-									Formação Acadêmica
-								</li>
-								<li className='py-5 pl-3 hover:bg-zinc-900 rounded-md '>
-									Projetos
-								</li>
-								<li className='py-5 pl-3 hover:bg-zinc-900 rounded-md '>
-									Contato
-								</li>
+                                <li className='py-5 pl-3 hover:bg-zinc-900 rounded-md'>
+                                    <a href='#Home' className="block hover:text-blue-400 transition-all">Inicio</a>
+                                </li>
+                                <li className='py-5 pl-3 hover:bg-zinc-900 rounded-md'>
+                                    <a href='#About' className="block hover:text-blue-400 transition-all">Sobre</a>
+                                </li>
+                                <li className='py-5 pl-3 hover:bg-zinc-900 rounded-md'>
+                                    <a href='#Academic' className="block hover:text-blue-400 transition-all">Formação Acadêmica</a>
+                                </li>
+                                <li className='py-5 pl-3 hover:bg-zinc-900 rounded-md'>
+                                    <a href='#Projects' className="block hover:text-blue-400 transition-all">Projetos</a>
+                                </li>
+                                <li className='py-5 pl-3 hover:bg-zinc-900 rounded-md'>
+                                    <a href='#Contact' className="block hover:text-blue-400 transition-all">Contato</a>
+                                </li>
 
                                 <hr className="my-3"/>
 
@@ -80,11 +80,11 @@ export default function Navbar() {
 			) : (
 				<div className='hidden' />
 			)}
-        <header className=" w-full py-2 px-3 bg-zinc-950">
+        <header className=" w-full py-2 px-3 bg-zinc-950 bg-opacity-75 fixed top-0 z-30">
             <div className="max-w-screen-xl mx-auto flex justify-between items-center">
                 <Image src={Logo} alt="Logo" width={25} height={25} />
                 <nav className="hidden md:flex ">
-                    <ul className="flex gap-x-4 text-xl font-medium">
+                    <ul className="flex space-x-4 text-md leading-6 font-semibold">
                         <li><a href='#Home' className="hover:text-blue-400 transition-all">Inicio</a></li>
                         <li><a href='#About' className="hover:text-blue-400 transition-all">Sobre</a></li>
                         <li><a href='#Academic' className="hover:text-blue-400 transition-all">Formação Acadêmica</a></li>

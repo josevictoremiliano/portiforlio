@@ -4,7 +4,7 @@ import SectionName from "./Layout/sectionName";
 export default function Sobre() {
     return(
         <section className=" ">
-            <SectionName name="Sobre" href="#About" id="Sobre" />
+            <SectionName name="Sobre" href="#About" id="About" />
 
             <div className="flex flex-col justify-between md:flex-row gap-4 mt-8">
                 <div className="rounded-md p-4 md:max-w-[50%] lg:max-w-[70%]">

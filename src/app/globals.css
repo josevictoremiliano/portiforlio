@@ -81,6 +81,7 @@
 
 body {
   scroll-behavior: smooth !important;
+
   color: rgb(var(--foreground-rgb));
   background: linear-gradient(
       to bottom,
@@ -142,4 +143,3 @@ body {
   -webkit-clip-path: polygon(0 68%, 100% 5%, 100% 100%, 0% 100%);
   clip-path: polygon(0 68%, 100% 5%, 100% 100%, 0% 100%);
 }
-

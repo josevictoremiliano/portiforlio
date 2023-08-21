@@ -1,5 +1,6 @@
 
 import Banner from '@/components/Banner'
+import Certificados from '@/components/certificados'
 import Projetos from '@/components/projetos'
 import Sobre from '@/components/sobre'
 
@@ -9,6 +10,7 @@ export default function Home() {
       <Banner />
       <Sobre />
       <Projetos />
+      <Certificados />
     </div>
   )
 }
