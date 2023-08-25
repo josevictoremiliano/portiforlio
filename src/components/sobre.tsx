@@ -1,5 +1,6 @@
 import Image from "next/image";
 import SectionName from "./Layout/sectionName";
+import MeNoBg from "/public/images/MeNoBg.png";
 
 export default function Sobre() {
     return(
@@ -18,7 +19,7 @@ export default function Sobre() {
 
                 <div className="rounded-md p-4 relative flex justify-center">
                     <div className="linearYellowRed bottom-0 absolute w-full rounded-md h-[85%] -z-10 "></div>
-                    <Image src="/images/MeNoBg.png" alt="Foto de José Victor" width={500} height={500} className="rounded-md hidden md:block md:w-[20em]" />
+                    <Image src={MeNoBg} alt="Foto de José Victor" width={500} height={500} className="rounded-md hidden md:block md:w-[20em]" />
                 </div>
             </div>
         </section>

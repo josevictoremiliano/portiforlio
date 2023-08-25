@@ -1,4 +1,5 @@
 import Image from "next/image"
+import stars from "public/star.png"
 
 const linguagens = [
     "Python",
@@ -22,7 +23,7 @@ export default function Linguagens() {
             {linguagens.map((linguagem, index) => (
                 <div key={index} className="text-cenoura text-1xl md:text-2xl font-bold flex gap-12 ">
                     <div className="block w-auto">{linguagem}</div>
-                    <Image src={`/star.png`} width={30} height={30} alt={linguagem} />
+                    <Image src={stars} width={30} height={30} alt={linguagem} />
                 </div>
             ))}
         </div>
