@@ -29,7 +29,7 @@ export default function Footer() {
                         href={redeSocial.link}
                         target="_blank"
                         rel="noopener noreferrer"
-                        className="text-slate-200 hover:text-gray-700 flex flex-row items-center justify-center gap-2"
+                        className="text-slate-200 hover:text-gray-400 flex flex-row items-center justify-center gap-2"
                     >
                         {redeSocial.icon} {redeSocial.nome}
                     </a>

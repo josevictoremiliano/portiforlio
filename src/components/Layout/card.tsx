@@ -5,7 +5,7 @@ import { Fragment, useState } from "react";
 import { X } from "@phosphor-icons/react";
 interface CardProps {
   title: string;
-  image: string;
+  image: any;
   description?: string;
   descriptionModal?: string;
   link?: string;
@@ -26,7 +26,7 @@ export default function Card(props: CardProps) {
   }
 
   return (
-    <div className="card max-w-full md:max-w-sm">
+    <div className="card md:max-w-sm max-w-xs">
       <div className="card-header">
         <h4 className="text-xl">{props.title}</h4>
       </div>
@@ -143,8 +143,9 @@ export default function Card(props: CardProps) {
                         href={props.link}
                         className={`inline-flex justify-center rounded-md  bg-acerola px-4 py-2 text-sm font-medium text-white hover:bg-cenoura focus:outline-none focus-visible:ring-0 focus-visible:ring-blue-500 focus-visible:ring-offset-2 ${props.linkDisponivel}`}
                         target="_blank"
+                        aria-label={props.buttonText ? props.buttonText : "Acessar projeto" + " " + props.title}
                     >
-                        Acessar projeto
+                         {props.buttonText ? props.buttonText : "Acessar projeto"}
                     </a>
                   </div>
                 </Dialog.Panel>

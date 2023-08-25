@@ -12,8 +12,8 @@ export default function Home() {
     <div>
       <Banner />
       <Sobre />
-      <Projetos />
       <Certificados />
+      <Projetos />
       <Footer />
     </div>
   )
