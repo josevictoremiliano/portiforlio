@@ -1,4 +1,5 @@
 "use client";
+import { Star } from "@phosphor-icons/react";
 import Image from "next/image"
 import stars from "public/star.png"
 import { useState, useRef, useEffect } from "react";
@@ -54,7 +55,7 @@ export default function Linguagens() {
             {linguagensCycle.map((linguagem, index) => (
                     <div key={index} className="text-cenoura text-1xl md:text-2xl font-bold flex gap-12">
                         <div className="block w-auto">{linguagem}</div>
-                        <Image src={stars} width={30} height={30} alt={linguagem} />
+                        <Star className="text-cenoura text-2xl"/>
                     </div>
                 ))}
             </div>

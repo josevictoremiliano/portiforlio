@@ -17,7 +17,7 @@ const certificados = [
 export default function Certificados() {
     return(
         <div className="my-12 ">
-            <SectionName name="Certificados"  href="Academic" id="Academic"/>
+            <SectionName name="Certificações"  href="Academic" id="Academic"/>
 
             <div className="flex flex-col items-start gap-3 my-2">
                 <a href="https://suap.ifrn.edu.br/media/diplomas_eletronicos/25a36806b83a11edb6170242c612fc82-temph25ENezH9Epm.pdf" target="_blank" rel="noopener noreferrer" 
@@ -35,6 +35,22 @@ export default function Certificados() {
                 className="flex  hover:text-yellow-200 justify-center py-2 px-4 shadow">
                     <Asterisk size={25}  weight="bold" className="text-yellow-400" />
                     <span>
+                        Web Design e Design Gráfico
+                        <span className="text-xs text-yellowmd font-semibold block">InfoWere</span>
+                    </span>
+                </div>
+                <div  
+                className="flex  hover:text-yellow-200 justify-center py-2 px-4 shadow">
+                    <Asterisk size={25}  weight="bold" className="text-yellow-400" />
+                    <span>
+                        React JS e React Native
+                        <span className="text-xs text-yellowmd font-semibold block">Rocketseat</span>
+                    </span>
+                </div>
+                <div
+                className="flex  hover:text-yellow-200 justify-center py-2 px-4 shadow">
+                    <Asterisk size={25}  weight="bold" className="text-yellow-400" />
+                    <span>
                         Curso de informática Básica a avançada
                         <span className="text-xs text-yellowmd font-semibold block">Eco Cursos</span>
                     </span>
@@ -45,6 +61,14 @@ export default function Certificados() {
                     <span>
                         Word, Excel e Power Point
                         <span className="text-xs text-yellowmd font-semibold block">Eco Cursos</span>
+                    </span>
+                </div>
+                <div  
+                className="flex  hover:text-yellow-200 justify-center py-2 px-4 shadow">
+                    <Asterisk size={25}  weight="bold" className="text-yellow-400" />
+                    <span>
+                        FIC - Inglês
+                        <span className="text-xs text-yellowmd font-semibold block">IFRN</span>
                     </span>
                 </div>
             </div>                

@@ -160,3 +160,25 @@ body {
       transform: translateX(calc(-50% + 16px)); /* Considerando o gap entre os elementos */
   }
 }
+
+@media screen and (max-width: 1017px) {
+  .social{
+    right: 20px !important;
+  }
+  
+}
+
+@media screen and (max-width: 768px) {
+  .btn-banner{
+    flex-direction: column !important;
+    gap: 1rem !important;
+  }
+
+  .btn-banner a:first-child{
+    margin-right: 0 !important;
+  }
+
+  .social .m2kl{
+    margin-left: 5%
+  }
+}
