@@ -13,7 +13,7 @@ export default function Banner() {
 
                     <div className="flex mt-8">
                         <Link href="#About" className="bg-acerola text-white px-8 py-3 rounded-full font-bold mr-4 hover:bg-orange-700 transition-all">Me conheça</Link>
-                        <Link href="#Contact" className="border-2 border-white hover:border-orange-700 transition-all text-white px-8 py-3 rounded-full font-bold">Curriculo</Link>
+                        <Link href="#Contact" className="border-2 border-white hover:border-orange-400 hover:bg-orange-400 transition-all text-white px-8 py-3 rounded-full font-bold">Curriculo</Link>
                     </div>
                 </div>
 

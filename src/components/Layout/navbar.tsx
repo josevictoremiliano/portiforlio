@@ -2,10 +2,12 @@
 
 import Image from "next/image"
 import Logo from "../../../public/logo.png"
+import { RedesSociais } from "@/components/Layout/footer"
 import { GithubLogo, InstagramLogo, LinkedinLogo, List, X } from "@phosphor-icons/react"
 
 
 import { useEffect, useState } from 'react'
+import { title } from "process"
 
 export default function Navbar() {
 	const [isOpen, setisOpen] = useState(false)
@@ -38,40 +40,34 @@ export default function Navbar() {
                                         <X size={36} color="#fff" />
                                     </button>
                                 </li>
-                                <li className='py-5 pl-3 hover:bg-zinc-900 rounded-md'>
-                                    <a href='#Home' className="block hover:text-blue-400 transition-all">Inicio</a>
-                                </li>
-                                <li className='py-5 pl-3 hover:bg-zinc-900 rounded-md'>
-                                    <a href='#About' className="block hover:text-blue-400 transition-all">Sobre</a>
-                                </li>
-                                <li className='py-5 pl-3 hover:bg-zinc-900 rounded-md'>
-                                    <a href='#Academic' className="block hover:text-blue-400 transition-all">Formação Acadêmica</a>
-                                </li>
-                                <li className='py-5 pl-3 hover:bg-zinc-900 rounded-md'>
-                                    <a href='#Projects' className="block hover:text-blue-400 transition-all">Projetos</a>
-                                </li>
-                                <li className='py-5 pl-3 hover:bg-zinc-900 rounded-md'>
-                                    <a href='#Contact' className="block hover:text-blue-400 transition-all">Contato</a>
-                                </li>
+                                {[
+                                    ['Home', '#Home'],
+                                    ['About', '#About'],
+                                    ['Academic', '#Academic'],
+                                    ['Projects', '#Projects'],
+                                    ['Contact', '#Contact'],
+                                ].map(([title, url]) => (
+                                    <li className='py-5 pl-3 hover:bg-zinc-900 rounded-md' key={title}>
+                                        <a href={url} className="block hover:text-orange-400 transition-all">{title}</a>
+                                    </li>
+                                ))}
 
                                 <hr className="my-3"/>
 
                                 <li className="flex  justify-center my-3">
-                                    <li className='py-5 pl-3 '>
-                                        <a href="https://www.instagram.com/j.victorms/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                                            <InstagramLogo size={36} color="#09f1ed" weight="light" />
-                                        </a>
-                                    </li>
-                                    <li className='py-5 pl-3  '>
-                                        <a href="https://www.linkedin.com/in/jose-victor-83334073/" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                                            <LinkedinLogo size={36} color="#09f1ed" weight="light" />
-                                        </a>
-                                    </li>
-                                    <li className='py-5 pl-3 '>
-                                        <a href="https://github.com/josevictoremiliano" target="_blank" rel="noopener noreferrer" className="hover:text-white">
-                                            <GithubLogo size={36} color="#09f1ed" weight="light" />
-                                        </a>
-                                    </li>
+                                    {RedesSociais.map((redeSocial, index) => (
+                                        <li key={index} className="flex justify-center items-center space-x-3">
+                                            <a
+                                                key={index}
+                                                href={redeSocial.link}
+                                                target="_blank"
+                                                rel="noopener noreferrer"
+                                                className="text-slate-200 hover:text-gray-900 bg-orange-600 hover:bg-orange-300 rounded-full p-3 shadow-lg transition-all font-bold text-2xl mx-2"
+                                            >
+                                                {redeSocial.icon}
+                                            </a>
+                                        </li>
+                                    ))}
                                 </li>
 							</ul>
 						</div>
@@ -85,11 +81,15 @@ export default function Navbar() {
                 <Image src={Logo} alt="Logo" width={25} height={25} />
                 <nav className="hidden md:flex ">
                     <ul className="flex space-x-4 text-md leading-6 font-semibold">
-                        <li><a href='#Home' className="hover:text-blue-400 transition-all">Inicio</a></li>
-                        <li><a href='#About' className="hover:text-blue-400 transition-all">Sobre</a></li>
-                        <li><a href='#Academic' className="hover:text-blue-400 transition-all">Formação Acadêmica</a></li>
-                        <li><a href='#Projects' className="hover:text-blue-400 transition-all">Projeto</a></li>
-                        <li><a href='#Contact' className="hover:text-blue-400 transition-all">Contato</a></li>
+                        {[
+                            ['Home', '#Home'],
+                            ['About', '#About'],
+                            ['Academic', '#Academic'],
+                            ['Projects', '#Projects'],
+                            ['Contact', '#Contact'],
+                        ].map(([title, url]) => (
+                            <li key={title}><a href={url} className="hover:text-orange-400 transition-all">{title}</a></li>
+                        ))}
                     </ul>
                 </nav>
               
