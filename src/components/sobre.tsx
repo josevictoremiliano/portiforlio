@@ -11,7 +11,7 @@ export default function Sobre() {
                 <div className="rounded-md p-4 md:max-w-[50%] lg:max-w-[70%]">
                     <h1 className="text-2xl font-bold text-white">Quem sou eu?</h1>
                     <p className="text-white text-lg mt-4">
-                        Sou José Victor, um desenvolvedor web e web designer com mais de 2 anos de experiência. Sou especialista em HTML, CSS, JavaScript e PHP. Também tenho experiência em plataformas web design como WordPress e Figma.
+                        Sou José Victor, um desenvolvedor web e web designer com mais de 4 anos de experiência. Sou especialista em HTML, CSS, JavaScript e PHP. Também tenho experiência em plataformas web design como WordPress e Figma.
                         Estou confiante de que minhas habilidades e experiência me qualificam para uma posição no mercado de trabalho. Estou animado para usar minhas habilidades para criar sites e aplicações web bonitos, funcionais e fáceis de usar.
                         Estou sempre procurando novos desafios e oportunidades para aprender e crescer. Estou ansioso para me juntar a uma equipe que valorize a inovação e a criatividade.
                     </p>
