@@ -17,7 +17,7 @@ const certificados = [
 export default function Certificados() {
     return(
         <div className="my-12 ">
-            <SectionName name="Certificações"  href="Academic" id="Academic"/>
+            <SectionName name="Certificações"  href="#Academic" id="Academic"/>
 
             <div className="flex flex-col items-start gap-3 my-2">
                 <a href="https://suap.ifrn.edu.br/media/diplomas_eletronicos/25a36806b83a11edb6170242c612fc82-temph25ENezH9Epm.pdf" target="_blank" rel="noopener noreferrer" 

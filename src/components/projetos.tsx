@@ -58,7 +58,7 @@ const projects = [
 export default function Projetos() {
     return(
         <div className="my-12">
-            <SectionName name="Projetos"  href="Projects" id="Projects"/>
+            <SectionName name="Projetos"  href="#Projects" id="Projects"/>
 
             <div className="flex flex-wrap justify-center  gap-2 mt-6 mx-2">
                 {projects.map((project, index) => (
