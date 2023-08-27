@@ -41,11 +41,11 @@ export default function Navbar() {
                                     </button>
                                 </li>
                                 {[
-                                    ['Home', '#Home'],
-                                    ['About', '#About'],
-                                    ['Academic', '#Academic'],
-                                    ['Projects', '#Projects'],
-                                    ['Contact', '#Contact'],
+                                    ['Início', '#Home'],
+                                    ['Sobre', '#About'],
+                                    ['Acadêmico', '#Academic'],
+                                    ['Projetos', '#Projects'],
+                                    ['Contato', '#Contact'],
                                 ].map(([title, url]) => (
                                     <li className='py-5 pl-3 hover:bg-zinc-900 rounded-md' key={title}>
                                         <a href={url} className="block hover:text-orange-400 transition-all">{title}</a>
@@ -82,11 +82,11 @@ export default function Navbar() {
                 <nav className="hidden md:flex ">
                     <ul className="flex space-x-4 text-md leading-6 font-semibold">
                         {[
-                            ['Home', '#Home'],
-                            ['About', '#About'],
-                            ['Academic', '#Academic'],
-                            ['Projects', '#Projects'],
-                            ['Contact', '#Contact'],
+                            ['Início', '#Home'],
+                            ['Sobre', '#About'],
+                            ['Acadêmico', '#Academic'],
+                            ['Projetos', '#Projects'],
+                            ['Contato', '#Contact'],
                         ].map(([title, url]) => (
                             <li key={title}><a href={url} className="hover:text-orange-400 transition-all">{title}</a></li>
                         ))}
