@@ -2,12 +2,13 @@ import Link from "next/link";
 import Linguagens from "./linguagens";
 import Contato from "./contato";
 import Social from "./social";
+import ParticlesContainer from "./particlesContainer";
 
 export default function Banner() {
     return(
         <section className="mb-4 w-full bg-center bg-contain bg-no-repeat bg-hero-pattern relative" id="Home">
             
-            <div className="max-w-screen-xl mx-auto flex flex-col items-center">
+            <div className="max-w-screen-xl mx-auto flex flex-col items-center relative">
                 <div className="mt-[10em] mx-6">
                     <div className="text-white text-2xl md:text-4xl font-semibold">Olá! eu sou </div>
                     <div className="linearGradientText text-5xl md:text-6xl font-bold ">Jose Victor</div>
@@ -19,7 +20,7 @@ export default function Banner() {
                     </div>
                     <Social/>
                 </div>
-
+                <ParticlesContainer />
                 <div className="linearGradientBackgroundTransparent h-20 mb-16 w-full mt-16">
                     <Linguagens />
                 </div>
