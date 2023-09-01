@@ -39,7 +39,7 @@ export default function ParticlesContainer() {
                     },
                     modes: {
                         push: {
-                            quantity: 90,
+                            quantity: 120,
                         },
                         repulse: {
                             distance: 100,
