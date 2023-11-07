@@ -13,7 +13,7 @@ const projects = [
         title: "Achei",
         image: ImageAchei,
         tags: ["PHP", "Laravel", "Bootstrap", "Figma", "JavaScript", "jQuery", "HTML", "CSS"],
-        description: "Compartilhamos informações sobre comércios, promoções e novidades. Se você não quer perder nada, assine nossa newsletter.",
+        description: "Compartilhamos informações sobre comércios, promoções e novidades.",
         link: "https://achei.tech"
     },
     {
