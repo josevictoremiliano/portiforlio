@@ -21,14 +21,14 @@ const projects = [
         image: ImageAchei,
         tags: ["PHP", "Laravel", "Bootstrap", "Figma", "JavaScript", "jQuery", "HTML", "CSS"],
         description: "Compartilhamos informações sobre comércios, promoções e novidades.",
-        link: "hidden"
+        linkDisponivel: "hidden"
     },
     {
         title: "SEIA",
         image: ImagemSeia,
         tags: ["PHP", "Laravel", "Bootstrap", "Figma", "JavaScript", "jQuery", "HTML", "CSS"],
         description: "O SEIA Escolar é um sistema de gestão escolar que ajuda gestores, professores e alunos a gerenciar informações de alunos, matrículas, turmas, notas, frequência e outras funcionalidades essenciais para o dia a dia escolar.",
-        link: "hidden"
+        linkDisponivel: "hidden"
     },
     {
         title: "Conexão cidadã",
