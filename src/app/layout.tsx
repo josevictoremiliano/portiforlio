@@ -19,7 +19,7 @@ export default function RootLayout({
   children: React.ReactNode
 }) {
   return (
-    <html lang="pt-br" className='scroll-smooth= dark bg-zinc-950 dark:bg-zinc-950'>
+    <html lang="pt-br" className='scroll-smooth' suppressHydrationWarning>
 
       <body className={inter.className}>
       <ThemeProvider
