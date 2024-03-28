@@ -28,16 +28,16 @@ export default function Navbar() {
         {isOpen === true ? (
 				<div className='sticky top-0 z-50'>
 					<div
-						className='fixed h-full inset-0   bg-zinc-600/40 backdrop-blur-sm flex w-screen '
+						className='fixed h-full inset-0  bg-zinc-100/40 dark:bg-zinc-600/40 backdrop-blur-sm flex w-screen '
 						onClick={toggleisOpen}>
 						<div className='w-full' />
 
-						<div className=' px-1 relative  h-full w-full bg-zinc-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-80'>
+						<div className=' px-1 relative  h-full w-full bg-zinc-600 dark:bg-zinc-900 rounded-md bg-clip-padding backdrop-filter backdrop-blur-md bg-opacity-80'>
 							
 							<ul className='flex flex-col p-2 '>
                                 <li>
                                     <button className="items-end  justify-end flex w-full" onClick={() => toggleisOpen()}>
-                                        <X size={36} color="#fff" />
+                                        <X size={36}  className="text-zinc-100 dark:text-white hover:text-orange-500"/>
                                     </button>
                                 </li>
                                 {[
@@ -47,8 +47,8 @@ export default function Navbar() {
                                     ['Projetos', '#Projects'],
                                     ['Contato', '#Contact'],
                                 ].map(([title, url]) => (
-                                    <li className='py-5 pl-3 hover:bg-zinc-900 rounded-md' key={title}>
-                                        <a href={url} className="block hover:text-orange-400 transition-all">{title}</a>
+                                    <li className='py-5 pl-3 transition-all text-white hover:text-orange-800 dark:hover:text-orange-400 hover:bg-zinc-300 dark:hover:bg-zinc-900 rounded-md' key={title}>
+                                        <a href={url} className="block  ">{title}</a>
                                     </li>
                                 ))}
 
@@ -76,7 +76,7 @@ export default function Navbar() {
 			) : (
 				<div className='hidden' />
 			)}
-        <header className=" w-full py-2 px-3 bg-zinc-950 bg-opacity-75 fixed top-0 z-30">
+        <header className=" w-full py-2 px-3 text-white bg-zinc-950 bg-opacity-75 fixed top-0 z-30">
             <div className="max-w-screen-xl mx-auto flex justify-between items-center">
                 <Image src={Logo} alt="Logo" width={25} height={25} />
                 <nav className="hidden md:flex ">

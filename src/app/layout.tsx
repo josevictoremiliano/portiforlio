@@ -2,8 +2,6 @@ import './globals.css'
 import type { Metadata } from 'next'
 import { Inter } from 'next/font/google'
 import Navbar from '@/components/Layout/navbar'
-import { ThemeProvider } from "@/components/theme-provider"
-
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -22,15 +20,8 @@ export default function RootLayout({
     <html lang="pt-br" className='scroll-smooth' suppressHydrationWarning>
 
       <body className={inter.className}>
-      <ThemeProvider
-            attribute="class"
-            defaultTheme="dark"
-            enableSystem
-            disableTransitionOnChange
-          >
         <Navbar />
         <div className='container max-w-screen-xl mx-auto '>{children}</div>
-        </ThemeProvider>
       </body>
     </html>
   )
