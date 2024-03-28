@@ -16,7 +16,7 @@ Este portfólio foi criado para apresentar meus projetos, habilidades e experiê
 
 **Entre em contato comigo:**
 
-* E-mail: [josevictoremiliano@gmail.com](mailto:josevictoremiliano@gmail.com)
+* E-mail: [josevictoremiliano@gmail.com](mailto:contato@jotav.me)
 * LinkedIn: [José Victor](https://www.linkedin.com/in/jose-victor-83334073/)
 * Portfólio: [https://jotav.me/](https://jotav.me/)
 
