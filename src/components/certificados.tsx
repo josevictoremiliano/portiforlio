@@ -1,77 +1,63 @@
 "use client"
 import { Asterisk } from "@phosphor-icons/react"
-import Card from "./Layout/card"
+import Card from "./Layout/cardCertificacoes"
 import SectionName from "./Layout/sectionName"
-import ImagemInfoWeb from "public/certificados/infoweb.png"
-
 const certificados = [
     {
         title: "Certificado de técnico em informática para internet",
-        image: ImagemInfoWeb,
-        descriptionModal: "Certificado de conclusão do curso técnico integrado em informática para internet, com carga horária de 3995 horas.",
+        description: "Certificado de conclusão do curso técnico integrado em informática para internet, com carga horária de 3995 horas.",
         tags: ["IFRN", "Técnico", "Informática", "Internet", "3995 horas"],
+        link: "https://drive.google.com/file/d/19ogw8HbWe8lxmfta8-tIiRwO-wh_Ye2D/view?usp=sharing"
+    },
+    {
+        title: "Certificações da Google cloud skills boost em 2024",
+        description: "Build and Secure Networks in Google Cloud, Implement Load Balancing on Compute Engine, Perform Foundational Data, ML, and AI Tasks in Google Cloud, Perform Foundational Infrastructure Tasks in Google Cloud e Build and Secure Networks in Google Cloud.",
+        tags: ["Google Cloud", "Skills Boost", "2024"],
+        link: "https://www.cloudskillsboost.google/public_profiles/6a3d5f9b-54a5-4ff7-b17d-5c82c04beed1?locale=pt_BR"
+    },
+    {
+        title: "Certificado de web design e design gráfico",
+        description: "Certificado de conclusão do curso de web design e design gráfico, com carga horária de 40 horas.",
+        tags: ["InfoWere", "Web Design", "Design Gráfico", "40 horas"],
+    },
+    {
+        title: "Certificado de React JS e React Native",
+        description: "Certificado de conclusão do curso de React JS e React Native, com carga horária de 40 horas.",
+        tags: ["Rocketseat", "React JS", "React Native", "40 horas"],
+    },
+    {
+        title: "Certificado de Melhor ideia empreendedora de 2023 no IFRN",
+        description: "Certificado de melhor ideia empreendedora de 2023 no IFRN, com o projeto de um site para reunir informaçãoes como um centro de comercio local paraa pequenas cidades do RN.",
+        tags: ["IFRN", "Melhor ideia empreendedora", "2023", "Site", "Comercio local"],
         link: "https://drive.google.com/file/d/1BaPEXUX4Gc08tpj5HJ-wmTDQgidAIa_H/view?usp=sharing"
+    },
+    {
+        title: "Certificado de curso de informática básica a avançada",
+        description: "Certificado de conclusão do curso de informática básica a avançada, com carga horária de 40 horas.",
+        tags: ["Eco Cursos", "Informática", "Básica", "Avançada", "40 horas"],
+    },
+    {
+        title: "Certificado de Word, Excel e Power Point",
+        description: "Certificado de conclusão do curso de Word, Excel e Power Point, com carga horária de 40 horas.",
+        tags: ["Eco Cursos", "Word", "Excel", "Power Point", "40 horas"],
+    },
+    {
+        title: "Certificado de FIC - Inglês",
+        description: "Certificado de conclusão do curso de Formação Inicial e Continuada em Inglês, com carga horária de 40 horas.",
+        tags: ["IFRN", "FIC", "Inglês", "40 horas"],
     }
 ]
 
 export default function Certificados() {
     return(
         <div className="my-12 ">
-            <SectionName name="Certificações"  href="#Academic" id="Academic"/>
+            <SectionName name="Certificações e diplomas"  href="#Academic" id="Academic"/>
 
-            <div className="flex flex-col items-start gap-3 my-2">
-                <a href="https://suap.ifrn.edu.br/media/diplomas_eletronicos/25a36806b83a11edb6170242c612fc82-temph25ENezH9Epm.pdf" target="_blank" rel="noopener noreferrer" 
-                className="flex  hover:text-yellow-200 justify-center py-2 px-4 shadow">
-                    <Asterisk size={25}  weight="bold" className="text-yellow-400" />
-                    <span>
-                        Técnico em informática para internet
-                        <span className="text-xs text-yellowmd font-semibold block">instituto federal de educação ciência e tecnologia do rio grande do norte</span>
-                    <span className="block font-bold text-xs">
-                        Toque para abrir
-                    </span>
-                    </span>
-                </a>
-                <div
-                className="flex  hover:text-yellow-200 justify-center py-2 px-4 shadow">
-                    <Asterisk size={25}  weight="bold" className="text-yellow-400" />
-                    <span>
-                        Web Design e Design Gráfico
-                        <span className="text-xs text-yellowmd font-semibold block">InfoWere</span>
-                    </span>
-                </div>
-                <div  
-                className="flex  hover:text-yellow-200 justify-center py-2 px-4 shadow">
-                    <Asterisk size={25}  weight="bold" className="text-yellow-400" />
-                    <span>
-                        React JS e React Native
-                        <span className="text-xs text-yellowmd font-semibold block">Rocketseat</span>
-                    </span>
-                </div>
-                <div
-                className="flex  hover:text-yellow-200 justify-center py-2 px-4 shadow">
-                    <Asterisk size={25}  weight="bold" className="text-yellow-400" />
-                    <span>
-                        Curso de informática Básica a avançada
-                        <span className="text-xs text-yellowmd font-semibold block">Eco Cursos</span>
-                    </span>
-                </div>
-                <div  
-                className="flex  hover:text-yellow-200 justify-center py-2 px-4 shadow">
-                    <Asterisk size={25}  weight="bold" className="text-yellow-400" />
-                    <span>
-                        Word, Excel e Power Point
-                        <span className="text-xs text-yellowmd font-semibold block">Eco Cursos</span>
-                    </span>
-                </div>
-                <div  
-                className="flex  hover:text-yellow-200 justify-center py-2 px-4 shadow">
-                    <Asterisk size={25}  weight="bold" className="text-yellow-400" />
-                    <span>
-                        FIC - Inglês
-                        <span className="text-xs text-yellowmd font-semibold block">IFRN</span>
-                    </span>
-                </div>
-            </div>                
+            <div className="grid grid-cols-1 md:grid-cols-3 gap-4 p-6">
+                {certificados.map((certificado, index) => (
+                    <Card key={index} title={certificado.title} description={certificado.description} tags={certificado.tags} link={certificado.link} />
+                ))}
+            </div>             
         </div>
         
     )

@@ -1,11 +1,11 @@
 import { link } from "fs";
 import Card from "./Layout/card";
 import SectionName from "./Layout/sectionName";
-import ImageAchei from "public/projetos/achei.png"
-import ImagemSeia from "public/projetos/seia.png"
-import ImagemConexaoCidadao from "public/projetos/conexaocidada.png"
-import ImagemLux from "public/projetos/lux.png"
-import ImagemNeep from "public/projetos/neep.png"
+import ImageAchei from "/public/projetos/achei.png"
+import ImagemSeia from "/public/projetos/seia.png"
+import ImagemConexaoCidadao from "/public/projetos/conexaocidada.png"
+import ImagemLux from "/public/projetos/lux.png"
+import ImagemNeep from "/public/projetos/neep.png"
 
 
 const projects = [
