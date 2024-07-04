@@ -36,7 +36,8 @@ export default function Footer() {
                 ))}
             </div>
             <div className="flex flex-col items-center justify-center w-full h-24">
-                <p className="text-gray-500">© 2023 José Victor</p>
+                <p className="text-gray-500">© 
+                    {new Date().getFullYear()} José Victor</p>
             </div>
         </footer>
     )

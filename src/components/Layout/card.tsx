@@ -17,8 +17,10 @@ interface CardProps {
 
 export default function Card(props: CardProps) {
   let [isOpen, setIsOpen] = useState(false);
+  const [isLoading, setIsLoading] = useState(true);
 
   function closeModal() {
+    setIsLoading(true);
     setIsOpen(false);
   }
 
@@ -121,8 +123,18 @@ export default function Card(props: CardProps) {
                   </Dialog.Title>
                   <div className="mt-2">
                     {props.figma ? (
-                      <iframe className="w-full h-96" src={props.figma} allowFullScreen>
-                      </iframe>  
+                        <div className="flex justify-center items-center">
+                          <div className={
+                            isLoading ? "block z-32 absolute" : "hidden"
+                          }>Carregando...</div>
+                        <iframe
+                          className="w-full h-96"
+                          src={props.figma}
+                          onLoad={() => setIsLoading(false)} // Define isLoading como false quando o iframe carrega 
+                          allowFullScreen
+                        >
+                        </iframe>
+                      </div>
                     ) : 
                       <Image
                         src={props.image}
