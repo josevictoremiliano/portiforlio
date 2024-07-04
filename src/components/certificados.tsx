@@ -10,7 +10,7 @@ const certificados = [
         image: ImagemInfoWeb,
         descriptionModal: "Certificado de conclusão do curso técnico integrado em informática para internet, com carga horária de 3995 horas.",
         tags: ["IFRN", "Técnico", "Informática", "Internet", "3995 horas"],
-        link: "https://suap.ifrn.edu.br/media/diplomas_eletronicos/25a36806b83a11edb6170242c612fc82-temph25ENezH9Epm.pdf"
+        link: "https://drive.google.com/file/d/1BaPEXUX4Gc08tpj5HJ-wmTDQgidAIa_H/view?usp=sharing"
     }
 ]
 
