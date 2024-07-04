@@ -21,14 +21,15 @@ const projects = [
         image: ImageAchei,
         tags: ["PHP", "Laravel", "Bootstrap", "Figma", "JavaScript", "jQuery", "HTML", "CSS"],
         description: "Compartilhamos informações sobre comércios, promoções e novidades.",
-        linkDisponivel: "hidden"
+        linkDisponivel: "hidden",
     },
     {
         title: "SEIA",
         image: ImagemSeia,
         tags: ["PHP", "Laravel", "Bootstrap", "Figma", "JavaScript", "jQuery", "HTML", "CSS"],
         description: "O SEIA Escolar é um sistema de gestão escolar que ajuda gestores, professores e alunos a gerenciar informações de alunos, matrículas, turmas, notas, frequência e outras funcionalidades essenciais para o dia a dia escolar.",
-        linkDisponivel: "hidden"
+        linkDisponivel: "hidden",
+        figma: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2F3TIu7K5hbtgCr2BMFJDd33%2FSEIA%3Fnode-id%3D1-10%26t%3DuGD9pRsmnkc6ZxK2-1%26scaling%3Dcontain%26content-scaling%3Dfixed%26page-id%3D1%253A3%26starting-point-node-id%3D1%253A10"
     },
     {
         title: "Conexão cidadã",
@@ -36,6 +37,7 @@ const projects = [
         image: ImagemConexaoCidadao,
         description: "O Conexão Cidadã ajuda a conectar os cidadães com seus gestores, permitindo que os cidadães possam enviar queixas ou requisições direto para seus gestores, trazendo maior transparência e agilidade para o processo.",
         linkDisponivel: "hidden",
+        figma: "https://www.figma.com/embed?embed_host=share&url=https%3A%2F%2Fwww.figma.com%2Fproto%2FpCKUhBU7YkRQ6cXQQUVETG%2FConex%25C3%25A3o-cidad%25C3%25A3%3Fnode-id%3D29-1104%26t%3DWuxenkDw2wiiUlQX-1%26scaling%3Dscale-down%26content-scaling%3Dfixed%26page-id%3D0%253A1%26starting-point-node-id%3D29%253A1104"
     },
     {
         title: "Lux",
@@ -71,6 +73,7 @@ export default function Projetos() {
                         tags={project.tags}
                         link={project.link}
                         linkDisponivel={project.linkDisponivel}
+                        figma={project.figma}
                     />
                 ))}
                 

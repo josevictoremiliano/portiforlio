@@ -21,9 +21,7 @@ export default function Card({ title, description, link, tags }: CardProps) {
            {
                 link && (
                      <a href={link} target="_blank" rel="noopener noreferrer" className="bg-zinc-800 p-1 rounded-md text-center text-yellow-400 font-semibold mt-4 block text-sm hover:text-yellow-100 hover:bg-zinc-700">
-                    {
-                        typeof window !== 'undefined' && (window.innerWidth <= 580 ? 'Toque' : 'Click')
-                    } para saber mais
+                        Toque para saber mais
                     </a>
                 ) 
            }

@@ -17,7 +17,10 @@ const linguagens = [
     "CSS",
     "TypeScript",
     "Java",
-    "PHP"
+    "PHP",
+    "Expo",
+    "WordPress",
+    "C#"
 ]
 
 

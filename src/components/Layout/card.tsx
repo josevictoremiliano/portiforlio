@@ -8,6 +8,7 @@ interface CardProps {
   image: any;
   description?: string;
   descriptionModal?: string;
+  figma?: string;
   link?: string;
   linkDisponivel?: string;
   buttonText?: string;
@@ -119,14 +120,19 @@ export default function Card(props: CardProps) {
                     <X className="h-6 w-6 text-gray-200 hover:text-orange-400 cursor-pointer transition-all" onClick={closeModal} />
                   </Dialog.Title>
                   <div className="mt-2">
-                    <Image
-                      src={props.image}
-                      alt={props.title}
-                      width={900}
-                      height={300}
-                      className="w-[900px]"
+                    {props.figma ? (
+                      <iframe className="w-full h-96" src={props.figma} allowFullScreen>
+                      </iframe>  
+                    ) : 
+                      <Image
+                        src={props.image}
+                        alt={props.title}
+                        width={900}
+                        height={300}
+                        className="w-[900px]"
 
-                    />
+                      />
+                    }                    
                     <p className="text-sm text-gray-500 my-3">{props.descriptionModal}</p>
                   </div>
 
