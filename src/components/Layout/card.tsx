@@ -2,7 +2,7 @@
 import Image from "next/image";
 import { Dialog, Transition } from "@headlessui/react";
 import { Fragment, useState } from "react";
-import { X } from "@phosphor-icons/react";
+import { Clock, FigmaLogo, Globe, X } from "@phosphor-icons/react";
 interface CardProps {
   title: string;
   image: any;
@@ -30,8 +30,18 @@ export default function Card(props: CardProps) {
 
   return (
     <div className="card md:max-w-sm max-w-xs">
-      <div className="card-header">
-        <h4 className="text-lg">{props.title}</h4>
+      <div className="card-header flex justify-between items-center gap-4">
+        <h4 className="text-lg ">{props.title}</h4>
+        {props.figma ? (
+            <FigmaLogo className="w-6 h-6 text-zinc-100" />
+        ) : 
+          props.link ? (
+            <Globe className="w-6 h-6 text-zinc-100" />
+          ) : 
+          props.linkDisponivel === "hidden" ? (
+            <Clock className="w-6 h-6 text-zinc-100" />
+          ) : null
+        }
       </div>
       <div className="card-image relative">
         <div className="overlay absolute flex justify-center items-center hover:bg-black hover:bg-opacity-60 transition-all w-full h-full ">
@@ -70,14 +80,28 @@ export default function Card(props: CardProps) {
           ))}
         </div>
 
-        {props.linkDisponivel === "hidden" ? (
-          <p className="text-zinc-900 bg-slate-100 py-1 px-2 rounded-md">Em breve</p>
-        ) : (
-          <></>
-        )}
+        {
+          props.figma ? (
+            <button
+              type="button"
+              onClick={openModal}
+              className="
+              text-zinc-100 bg-gradient-to-r from-red-500 to-orange-500 py-1 px-4 rounded-md hover:from-orange-500 hover:to-red-500
+              transition-colors shadow-md items-center justify-center flex
+          "
+            >
+              Ver Figma
+            </button>
+          ) : props.linkDisponivel === "hidden" ? (
+            <p className="text-zinc-900 bg-slate-100 py-1 px-2 rounded-md">Em breve</p>
+          ) : (
+            <></>
+          )
+        }
+
         <a
           href={props.link}
-          className={`bg-acerola hover:bg-cenoura transition-colors shadow-md py-1 px-2 items-center justify-center flex rounded-md ${props.linkDisponivel}`}
+          className={`bg-acerola hover:bg-cenoura transition-colors shadow-md py-1 px-4 items-center justify-center flex rounded-md ${props.linkDisponivel}`}
           target="_blank"
           aria-label={props.buttonText ? props.buttonText : "Acessar projeto" + " " + props.title}
         >
@@ -126,7 +150,7 @@ export default function Card(props: CardProps) {
                         <div className="flex justify-center items-center">
                           <div className={
                             isLoading ? "block z-32 absolute" : "hidden"
-                          }>Carregando...</div>
+                          }>Carregando Figma...</div>
                         <iframe
                           className="w-full h-96"
                           src={props.figma}
