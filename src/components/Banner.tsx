@@ -16,7 +16,15 @@ export default function Banner() {
 
                     <div className="flex mt-8 btn-banner">
                         <Link href="#About" className="bg-acerola text-white px-8 py-3 rounded-full font-bold mr-4 hover:bg-orange-700 transition-all">Me conheça</Link>
-                        <Link href="https://1drv.ms/w/s!AtHHsCvSrvrAh71NMOigRvcm7X0I8A?e=BNdMcj" target="_blank" className="border-2 border-white hover:border-orange-400 hover:bg-orange-400 transition-all text-white px-8 py-3 rounded-full font-bold">Curriculo</Link>
+                        <Link 
+                            href="https://1drv.ms/w/s!AtHHsCvSrvrAh71NMOigRvcm7X0I8A?e=sPP1dP" 
+                            target="_blank" 
+                            rel="noopener noreferrer"
+                            aria-label="Acessar meu currículo"
+                            className="border-2 border-white hover:border-orange-400 hover:bg-orange-400 transition-all text-white px-8 py-3 rounded-full font-bold flex items-center"
+                            >
+                        Curriculo
+                        </Link>
                     </div>
                     <Social/>
                 </div>

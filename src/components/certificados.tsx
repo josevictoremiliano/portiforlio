@@ -16,6 +16,12 @@ const certificados = [
         link: "https://www.cloudskillsboost.google/public_profiles/6a3d5f9b-54a5-4ff7-b17d-5c82c04beed1?locale=pt_BR"
     },
     {
+        title: "Certificação Em iniciente em programação ORACLE - ONE",
+        description: "Certificação de conclusão do programa de iniciante em programação pela ORACLE  oferecido pela ALURA - ORACLE ONE T7, com carga horária de 72 horas.",
+        tags: ["Oracle","ONE" ,"Iniciante em programação", "72 horas", "T7"],
+        link: "https://drive.google.com/file/d/1109jxnW8OBLhgZ1ejSCd_mVYv247WO1c/view?usp=sharing"
+    },
+    {
         title: "Certificado de web design e design gráfico",
         description: "Certificado de conclusão do curso de web design e design gráfico, com carga horária de 40 horas.",
         tags: ["InfoWere", "Web Design", "Design Gráfico", "40 horas"],
