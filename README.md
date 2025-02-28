@@ -20,4 +20,4 @@ Este portfólio foi criado para apresentar meus projetos, habilidades e experiê
 * LinkedIn: [José Victor](https://www.linkedin.com/in/jose-victor-83334073/)
 * Portfólio: [https://jotav.me/](https://jotav.me/)
 
-**Obrigado pela sua visita!**
+**Obrigado pela sua visita!** 
