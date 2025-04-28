@@ -6,13 +6,30 @@ import ImagemSeia from "/public/projetos/seia.png"
 import ImagemConexaoCidadao from "/public/projetos/conexaocidada.png"
 import ImagemLux from "/public/projetos/lux.png"
 import ImagemNeep from "/public/projetos/neep.png"
+import ImagemFinOrg from "/public/projetos/finOrganize.png"
+import ImageSigEduc from "/public/projetos/sigeduc.png"
+import ImageDoceriaSmart from "/public/projetos/doceriaSmart.png"
 
 
 const projects = [
+    {
+        title: "FinOrganize",
+        tags: ["React", "NextJS", "TailwindCSS", "ShadcnUI", "PWA"],
+        image: ImagemFinOrg,
+        description: "FinOrganize é um aplicativo web que ajuda você a organizar suas finanças de forma simples e prática, podendo ser instalado como um aplicativo PWA. Gerencie saldos, despesas fixas ou mensais, controle vencimento dos seus cartões e ainda gere relatorios anuais ou mensais.",
+        link: "https://finance.jotav.me",
+    },
+    {
+        title: "Doceria Smart",
+        tags: ["Filament", "Laravel", "PHP", "TailwindCSS"],
+        image: ImageDoceriaSmart,
+        description: "A Doceria Smart é um sistema criado para a cliente Flávia de gestão para confeiteiras que trabalham em casa ou em um ateliê reunindo tudo o que uma boa confeiteira precisa para controlar sua produção, pedidos, clientes, receitas, precificação e finanças, em um só lugar.",
+        link: "https://gestao.doceriasmart.com",
+    },
      {
         title: "Redesign do SigEduc",
         tags: ["Figma", "HTML", "CSS", "JavaScript"],
-        image: "/projetos/sigeduc.png",
+        image: ImageSigEduc,
         description: "Redesign do SigEduc para se adequar aos padrões visuais da Web atuais e possibilitando melhorias de UX/UI.",
         link: "https://josevictoremiliano.github.io/SigEduc/index.html"
     },
